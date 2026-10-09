@@ -1,0 +1,30 @@
+{
+  "name": "finance-tracker-app",
+  "version": "1.0.0",
+  "description": "A comprehensive finance system with budget control, income and expenses management",
+  "type": "module",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "nodemon server/index.js",
+    "client": "cd client && npm run dev",
+    "build": "cd client && npm run build",
+    "install-all": "npm install && cd client && npm install",
+    "seed": "node server/scripts/seed.js"
+  },
+  "keywords": ["finance", "budget", "expenses", "income", "tracking"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.1.0",
+    "mongoose": "^7.5.0",
+    "express-validator": "^7.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
